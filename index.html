@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>Welcome to Michael Remley's Portfolio!</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    p {
+      margin: 10px;
+    }
+    name_title {
+      color: black;
+      font-weight: bold;
+      font-size:45px;
+      align: left;
+      margin-left: 5%;
+      padding-top: 5%;
+      margin-bottom: 5px;
+    }
+    nav {
+      font-size: 30px;
+      align: auto;
+      margin-left: 5%;
+      width: auto;
+    }
+    a.nav {
+      color: black;
+      text-decoration: none;
+      padding: 5px;
+      margin-left: 10px;
+      z-index = -1;
+    }
+  </style>
+  <script type="text/javascript">
+    var Navis = document.getElementsByClassName("nav");
+
+    function formatNavis() {
+      currDir = window.location.href;
+      var i;
+      for(i=0;i<Navis.length;i++){
+        if (Navis[i].href == currDir){
+          Navis[i].style.backgroundColor = "white";
+          Navis[i].style.boxShadow = "0px 0px 0px gray";
+          Navis[i].style.borderBottom = "thick solid white";
+          Navis[i].style.borderTopLeftRadius = "10px";
+          Navis[i].style.borderTopRightRadius = "10px";
+
+        }
+        else {
+
+        }
+      }
+    }
+    window.onload=formatNavis;
+  </script>
+</head>
+<body>
+  <div style="background-color: lightgray;box-shadow: inset 0 0 5px #000000;">
+    <name_title>
+    Michael Remley
+    </name_title>
+    <nav onload="formatNavis()">
+      <a class="nav" href="#" style=nav>Home</a>
+      <a class="nav" href="/projects">Projects</a>
+      <a class="nav" href="/gallery">Gallery</a>
+      <a class="nav" href="." onClick="alert('Hello');">Click Me</a>
+    </nav>
+    </div>
+    <p style="background-color: white">
+      Sample text
+    </p>
+</body>
+</html>
