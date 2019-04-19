@@ -25,14 +25,15 @@ h1
 	text-transform:uppercase;
 	letter-spacing:.75pt;
 	font-weight:normal;}
-h2,td
+h2
 	{margin:0in;
-
 	line-height:115%;
 	background:#DDDDDD;
   border:none;
 	padding:0in;
 	font-size:10.0pt;
+  display:flex;
+  justify-content:space-between;
 	font-family:"Gill Sans MT",sans-serif;
 	color:black;
 	text-transform:uppercase;
@@ -41,9 +42,9 @@ h3
 	{margin-top:0in;
 	margin-right:0in;
 	margin-bottom:0in;
-
 	line-height:115%;
 	border:none;
+  border-bottom:solid windowtext 1.5pt;
 	padding:0in;
 	font-size:14.0pt;
 	font-family:"Gill Sans MT",sans-serif;}
@@ -52,6 +53,8 @@ h4
 	margin-right:0in;
 	margin-bottom:0in;
 	margin-bottom: 0in;
+  display:flex;
+  justify-content:space-between;
 	line-height:115%;
 	font-size:12.0pt;
 	font-family:"Gill Sans MT",sans-serif;
@@ -106,6 +109,16 @@ p.NoSpacing, li.NoSpacing, div.NoSpacing
 	line-height:115%;
 	font-size:11.0pt;
 	font-family:"Gill Sans MT",sans-serif;}
+p.RightAlignDate
+  {
+    margin-top:0in;
+  	margin-bottom:0in;
+  	line-height:115%;
+  	font-size:11.0pt;
+  	font-family:"Gill Sans MT",sans-serif;
+    display:flex;
+    justify-content:space-between;
+  }
 @page WordSection1
 	{size:11.0in 8.5in;
 	margin:1.0in 1.0in 1.0in 1.0in;}
@@ -114,10 +127,11 @@ div.WordSection1
   background: white;
   box-shadow: 2px 2px 10px 5px grey;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
  table
 	{
-	font-size:10.0pt;
+	font-size:medium;
 	font-family:"Gill Sans MT",sans-serif;
 	}
 </style>
@@ -127,38 +141,24 @@ div.WordSection1
 
 <div class=WordSection1>
 
-<div style='padding:1.0pt 4.0pt 1.0pt 4.0pt;background:
-#393939;'>
+<div style='padding:4.0pt 4.0pt 4.0pt 4.0pt;background:#393939;'>
 
 <h1 style='background:#393939;'>Michael James Remley</h1>
 
 </div>
 
-  <table style="border:solid #DDDDDD 3.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;background:#DDDDDD;
-  width:7.25in;">
-    <tr>
-      <td><h2 >Campus</h2></td>
-      <td style="text-align:right"><h2>Permanent</h2></td>
-    </tr>
-    <tr>
-      <td><h2>MB 159 Olin Way</h2></td>
-      <td style="text-align:right"><h2>1487 Gleneagles Drive</h2></td>
-    </tr>
-    <tr>
-      <td><h2>Needham, MA 02492</h2></td>
-      <td style="text-align:right"><h2>Syracuse, UT 84075</h2>
-    </tr>
-    <tr>
-      <td><h2>michaeljremley@gmail.com</h2></td>
-      <td style="text-align:right"><h2>(801)791-9495</h2></td>
-    </tr>
-
-  </table>
+<div style="padding:4.0pt 4.0pt 4.0pt 4.0pt;background:#DDDDDD;
+  width:-webkit-fill-available;">
+  <h2>Campus<span>Permanent</span></h2>
+  <h2>MB 159 Olin Way<span>1487 Gleneagles Drive</span></h2>
+  <h2>Needham, MA 02492<span>Syracuse, UT 84075</span></h2>
+  <h2>michaeljremley@gmail.com<span>(801)791-9495</span></h2>
+  </div>
 <div style="border: solid white 3pt;">
 
-<h3 style='border-bottom:solid windowtext 1.5pt;'>Education</h3>
+<h3>Education</h3>
 
-<h4>Franklin W. Olin College of Engineering - Needham, MA May 2022</h4>
+<h4>Franklin W. Olin College of Engineering - Needham, MA <span>May 2022</span></h4>
 
 <p class=NoSpacing>Candidate for Bachelor of Science
 in Electrical and Computer Engineering; GPA available May 2019</p>
@@ -168,36 +168,36 @@ in Electrical and Computer Engineering; GPA available May 2019</p>
 <p class=NoSpacing><b>Relevant Courses: </b>Design Nature; Introduction to Sensors,
 Instrumentation, and Measurement; Modeling and Simulation; History of
 Technology; Quantitative Engineering Analysis*, Software Design*, Products and
-Markets*. (* currently enrolled)</p>
+Markets*. <br>(* currently enrolled)</p>
 
 <h4>Northern Utah Academy of Math Engineering and
-Science - Syracuse, UT May 2018</h4>
+Science - Syracuse, UT <span>May 2018</span></h4>
 
 <p class=NoSpacing>Valedictorian, National
 Merit Scholar, 4.0 GPA</p>
 
-<h4>Weber State University - Ogden, UT April 2018</h4>
+<h4>Weber State University - Ogden, UT <span>April 2018</span></h4>
 
 <p class=NoSpacing>Associate of Art in German,
 Named Outstanding Graduate, 4.0 GPA</p>
 
-<h3 style='border-bottom:solid windowtext 1.5pt;'>Experience</h3>
+<h3>Experience</h3>
 
 <h4>Weber State University - Ogden, UT</h4>
 
-<p class=NoSpacing><i>Atmosniffer</i><i> Development Assistant</i>May
-2017 - May 2018</p>
+<p class=RightAlignDate><i>Atmosniffer Development Assistant</i><span>May
+2017 - May 2018</span></p>
 
 <p class=NoSpacing>Facilitated a firmware
 team-s transition to a new family of microcontrollers</p>
 
-<p class=NoSpacing><i>Minibeacon</i><i> Team Lead</i>May 2016 - August
+<p class=RightAlignDate><i>Minibeacon Team Lead</i>May 2016 - August
 2018</p>
 
 <p class=NoSpacing>Developed a weather balloon
 telemetry system and maintained a small team in its operation</p>
 
-<p class=NoSpacing><i>Human Motion Project</i>May 2016
+<p class=RightAlignDate><i>Human Motion Project</i>May 2016
 - Present</p>
 
 <p class=NoSpacing>Designing and patenting a
@@ -205,8 +205,8 @@ wearable motion tracking system for fitness and medical use</p>
 
 <h4>Mathnasium - Layton, UT</h4>
 
-<p class=NoSpacing><i>Math Instructor</i> February 2017
-- April 2018</p>
+<p class=RightAlignDate><i>Math Instructor</i><span>February 2017
+- April 2018</span></p>
 
 <p class=NoSpacing>Tutored K-12 students in
 math up to calculus</p>
@@ -214,7 +214,7 @@ math up to calculus</p>
 <h3 style='border-bottom:solid windowtext 1.5pt;'>
   Leadership and Activities</h3>
 
-<h4>Boy Scouts of America - West Point, UT 2012-2018</h4>
+<h4>Boy Scouts of America - West Point, UT <span>2012-2018</span></h4>
 
 <p class=NoSpacing>Led community scout troop 1910
 as senior patrol leader then presided as a teacher for the younger boys</p>
@@ -224,7 +224,7 @@ as senior patrol leader then presided as a teacher for the younger boys</p>
 <p class=NoSpacing>Awarded Eagle Scout in
 February 2018</p>
 
-<h4>Olin Aquatic Robotic System - Olin College Fall 2018 - Present</h4>
+<h4>Olin Aquatic Robotic System - Olin College <span>Fall 2018 - Present</span></h4>
 
 <p class=NoSpacing>Guiding and collaborating
 with the electrical sub-team to create an automatic sailing robot</p>
