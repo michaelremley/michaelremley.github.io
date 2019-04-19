@@ -3,6 +3,37 @@
 	<title>Gallery</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
   <style>
+	figure {
+		border:1em solid #DDDDDD;
+		background-color: #DDDDDD;
+		width:fit-content;
+		height:fit-content;
+		margin:1em;
+		position: relative;
+		box-shadow: 0 0 5px black;
+	}
+
+	figure:hover .hovertext{
+		box-shadow: 0 0 5px black;
+		top: 0%;
+		opacity: 0.7;
+		height: fit-content;
+
+	}
+	.hovertext {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  background-color: #DDDDDD;
+  overflow: hidden;
+  height:0;
+  transition: 0.25s ease;
+	}
+p.picturetitle {
+	font-size: 20px;
+	font-weight: bold;
+}
 
   </style>
 
@@ -22,8 +53,38 @@
 			<a class="nav" href="./Resume.htm">Resume</a>
     </nav>
     </div>
-    <p style="background-color: white">
-      Coming soon!
-    </p>
+    <main style="background-color: white">
+			<div style="display:flex;justify-content:space-around;">
+				<figure>
+					<img src="images/me_and_balloon.png">
+					<div class="hovertext">
+						<p class="picturetitle">
+							<p class="picturetitle">Air Quality Measurement with HARBOR, 2017</p>
+									<p>I am part of the HARBOR group at Weber State University, and
+										this picture is from some ground-level air measurements we did on
+										pollution during an inversion in Ogden, Utah</p>
+					</div>
+				</figure>
+
+			<div style="display:block">
+				<figure>
+      		<img src="images/antelope_island_sunset.jpg"width=100%>
+					<div class="hovertext">
+						<p class="picturetitle">Sunset on Antelope Island, 2017</p>
+									<p>by Michael Remley. All Rights Reserved</p>
+					</div>
+				</figure>
+
+			<figure style="height:unset">
+				<img src="images/zion_at_night.jpg"width=100%>
+				<div class="hovertext">
+					<p class="picturetitle">Zion at Night, 2016</p>
+					<p>Night photography of the Watchman rock formation in Zion National Park, Utah<br>
+					by Michael Remley. All Rights Reserved</p>
+				</div>
+			</figure>
+		</div>
+		</div>
+    </main>
 </body>
 </html>

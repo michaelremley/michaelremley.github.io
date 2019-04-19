@@ -28,5 +28,9 @@ a.nav {
   text-decoration: none;
   padding-left: 1%;
   padding-right: 1%;
+  border-bottom: thick solid transparent;
   z-index = -1;
+}
+main {
+  margin: 2em;
 }

@@ -11,8 +11,6 @@ function formatNavis() {
       Navis[i].style.borderTopRightRadius = "10px";
 
     }
-    else {
-    }
   }
 }
 window.onload=formatNavis;
