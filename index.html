@@ -4,6 +4,7 @@
   <style>
     body {
       margin: 0;
+			font-family: Tahoma;
     }
     p {
       margin: 10px;
@@ -22,6 +23,7 @@
       align: auto;
       margin-left: 5%;
       margin-top: 1%;
+			padding-bottom:4pt;
       width: auto;
     }
     a.nav {
@@ -36,10 +38,10 @@
     var Navis = document.getElementsByClassName("nav");
 
     function formatNavis() {
-      currDir = window.location.href;
+      currDir = "Home";
       var i;
       for(i=0;i<Navis.length;i++){
-        if (Navis[i].href == currDir){
+        if (Navis[i].innerHTML == currDir){
           Navis[i].style.backgroundColor = "white";
           Navis[i].style.boxShadow = "0px 0px 0px gray";
           Navis[i].style.borderBottom = "thick solid white";
