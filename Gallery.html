@@ -3,20 +3,49 @@
 	<title>Gallery</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
   <style>
-	figure {
+	main{
+		display: grid;
+		grid-row-gap: 4em;
+	}
+	.im1{
+		grid-area: 1 / 1 / span 1 / span 3;
+	}
+	.im2{
+		grid-area: 2 / 1 / span 1 / span 1;
+	}
+	.im3{
+		grid-area: 2 / 2 / span 1 / span 1;
+	}
+	.im4{
+		grid-area: 2 / 3 / span 1 / span 1;
+	}
+	.im5{
+		grid-area: 3 / 1 / span 2 / span 1;
+	}
+	.im6{
+		grid-area: 3 / 2 / span 1 / span 2;
+	}
+	.im7 {
+		grid-area: 4 / 2 / span 1 / span 1;
+	}
+	img {
+		object-fit: cover;
+		max-width: 100%
+	}
+	container {
 		border:1em solid #DDDDDD;
 		background-color: #DDDDDD;
 		width:fit-content;
-		height:fit-content;
-		margin:1em;
 		position: relative;
 		box-shadow: 0 0 5px black;
+		align-self: center;
+		margin:auto;
 	}
 
-	figure:hover .hovertext{
+	container:hover .hovertext{
 		box-shadow: 0 0 5px black;
 		top: 0%;
-		opacity: 0.7;
+		opacity: 0.9;
 		height: fit-content;
 
 	}
@@ -34,7 +63,6 @@ p.picturetitle {
 	font-size: 20px;
 	font-weight: bold;
 }
-
   </style>
 
 	<script src="styleNav.js">
@@ -54,47 +82,84 @@ p.picturetitle {
     </nav>
     </div>
     <main style="background-color: white">
-			<div style="display:flex;justify-content:space-around;">
-				<figure>
-					<img src="images/me_and_balloon.png">
+				<container class='im1'>
+					<img src="images/antelope_island_sunset.jpg" style="height:500px;width:1500px">
+					<div class="hovertext">
+						<p class="picturetitle">Sunset on Antelope Island, 2017</p>
+									<p>by Michael Remley. All Rights Reserved</p>
+					</div>
+				</container>
+
+
+				<container class='im2'>
+					<img src="images/play_experience.jpg" style="height:500px;width:500px">
+					<div class="hovertext">
+						<p class="picturetitle">Play Experience, 2018</p>
+						<p>My project team designed a bee-themed play experience for fourth graders.<br>
+						by Michael Remley. All Rights Reserved</p>
+					</div>
+				</container>
+
+				<container class='im3'>
+					<img src="images/hopper.jpg"style="height:500px;width:500px">
+					<div class="hovertext">
+						<p class="picturetitle">Click Beetle-Inspired Hopper, 2018</p>
+						<p>A bio-inspired hopping toy with a focus on carrying a passenger safely.</p>
+						<!-- <p><a href="./Projects/hopper.html">Part of the Hopper Project</a></p> -->
+					</div>
+				</container>
+
+				<container class='im4'>
+					<img src="images/motion_v2.png"style="height:500px;width:500px">
+					<div class="hovertext">
+						<p class="picturetitle">Human Motion V2, 2018</p>
+						<p>An image of one of the boards I designed, assembled, and programmed for human motion data collection<br>
+						by Michael Remley. All Rights Reserved</p>
+						<p><a href="./Projects/Humanmotion.html">Part of the Human Motion Project</a></p>
+					</div>
+				</container>
+
+				<container class='im5'>
+					<img src="images/me_and_balloon.png"style="height:1000px;width:500px">
 					<div class="hovertext">
 						<p class="picturetitle">
 							<p class="picturetitle">Air Quality Measurement with HARBOR, 2017</p>
 									<p>I am part of the HARBOR group at Weber State University, and
 										this picture is from some ground-level air measurements we did on
 										pollution during an inversion in Ogden, Utah</p>
+									<p><a href="./Projects/Minibeacon.html">Part of the Minibeacon Project</a></p>
 					</div>
-					</figure>
+					</container>
 
-			<div style="display:block">
-				<figure>
-      		<img src="images/antelope_island_sunset.jpg"width=100%>
-					<div class="hovertext">
-						<p class="picturetitle">Sunset on Antelope Island, 2017</p>
-									<p>by Michael Remley. All Rights Reserved</p>
-					</div>
-				</figure>
+					<container class='im6'>
+						<img src="images/gait_diagram.jpg"style="height:500px;width:1000px">
+						<div class="hovertext">
+							<p class="picturetitle">
+								<p class="picturetitle">Gait Diagram, 2017</p>
+										<p>I have been studying human gait since 2016, and I created
+										this diagram for a presentation at the international science fair.
+										The audience members had varying degrees of familiarity with
+										the subject, so diagrams like this were useful in communications.</p>
+										<p><a href="./Projects/Humanmotion.html">Part of the Human Motion Project</a></p>
+						</div>
+						</container>
 
-				<figure style="height:unset">
-					<img src="images/zion_at_night.jpg"width=100%>
-					<div class="hovertext">
-						<p class="picturetitle">Zion at Night, 2016</p>
-						<p>Night photography of the Watchman rock formation in Zion National Park, Utah<br>
-						by Michael Remley. All Rights Reserved</p>
-					</div>
-				</figure>
+						<container class='im7'>
+							<img src="images/heel.gif"style="height:500px;width:500px">
+							<div class="hovertext">
+								<p class="picturetitle">
+									<p class="picturetitle">Quantitatively Engineering Boats, 2019</p>
+											<p>In the class Quantitative Engineering Analysis, I designed a boat
+											and calculated how it would float before building anything. This illustration
+										shows the relative positions of buoyant force and force of gravity
+										for a variety of boat orientations.</p>
+
+							</div>
+							</container>
 			</div>
-			</div>
-			<div style="display:block">
-				<figure style="width:50%">
-					<img src="images/lionfish.png"width="100%">
-					<div class="hovertext">
-						<p class="picturetitle">
-							<p class="picturetitle">Lionfish, 2018</p>
-									<p>by Michael Remley, All Rights Reserved</p>
-					</div>
-					</figure>
-			</div>
+
+
+
 
     </main>
 </body>
