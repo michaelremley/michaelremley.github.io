@@ -5,10 +5,15 @@
   <style>
 	main{
 		display: grid;
-		grid-row-gap: 4em;
+		grid-gap: 1rem;
+		max-width: 94rem;
+		width:90%;
+		margin:2rem auto;
 	}
 	.im1{
 		grid-area: 1 / 1 / span 1 / span 3;
+		width: 100%
+		padding-top:33%;
 	}
 	.im2{
 		grid-area: 2 / 1 / span 1 / span 1;
@@ -23,23 +28,25 @@
 		grid-area: 3 / 1 / span 2 / span 1;
 	}
 	.im6{
-		grid-area: 3 / 2 / span 1 / span 2;
+		grid-area: 4 / 2 / span 1 / span 2;
 	}
 	.im7 {
-		grid-area: 4 / 2 / span 1 / span 1;
+		grid-area: 3 / 2 / span 1 / span 1;
 	}
 	img {
 		object-fit: cover;
-		max-width: 100%
+		max-width: 100%;
+		box-sizing: border-box;
 	}
 	container {
+		/* margin:auto; */
 		border:1em solid #DDDDDD;
+		box-shadow: 0 0 5px black;
 		background-color: #DDDDDD;
 		width:fit-content;
 		position: relative;
-		box-shadow: 0 0 5px black;
-		align-self: center;
-		margin:auto;
+		/* align-self: center; */
+
 	}
 
 	container:hover .hovertext{
@@ -83,7 +90,7 @@ p.picturetitle {
     </div>
     <main style="background-color: white">
 				<container class='im1'>
-					<img src="images/antelope_island_sunset.jpg" style="height:500px;width:1500px">
+					<img src="images/antelope_island_sunset.jpg" style="height:30rem;width:94rem">
 					<div class="hovertext">
 						<p class="picturetitle">Sunset on Antelope Island, 2017</p>
 									<p>by Michael Remley. All Rights Reserved</p>
@@ -92,7 +99,7 @@ p.picturetitle {
 
 
 				<container class='im2'>
-					<img src="images/play_experience.jpg" style="height:500px;width:500px">
+					<img src="images/play_experience.jpg" style="height:30rem;width:30rem">
 					<div class="hovertext">
 						<p class="picturetitle">Play Experience, 2018</p>
 						<p>My project team designed a bee-themed play experience for fourth graders.<br>
@@ -101,7 +108,7 @@ p.picturetitle {
 				</container>
 
 				<container class='im3'>
-					<img src="images/hopper.jpg"style="height:500px;width:500px">
+					<img src="images/hopper.jpg"style="height:30rem;width:30rem">
 					<div class="hovertext">
 						<p class="picturetitle">Click Beetle-Inspired Hopper, 2018</p>
 						<p>A bio-inspired hopping toy with a focus on carrying a passenger safely.</p>
@@ -110,7 +117,7 @@ p.picturetitle {
 				</container>
 
 				<container class='im4'>
-					<img src="images/motion_v2.png"style="height:500px;width:500px">
+					<img src="images/motion_v2.png"style="height:30rem;width:30rem">
 					<div class="hovertext">
 						<p class="picturetitle">Human Motion V2, 2018</p>
 						<p>An image of one of the boards I designed, assembled, and programmed for human motion data collection<br>
@@ -120,7 +127,7 @@ p.picturetitle {
 				</container>
 
 				<container class='im5'>
-					<img src="images/me_and_balloon.png"style="height:1000px;width:500px">
+					<img src="images/me_and_balloon.png"style="height:63rem;width:30rem">
 					<div class="hovertext">
 						<p class="picturetitle">
 							<p class="picturetitle">Air Quality Measurement with HARBOR, 2017</p>
@@ -132,7 +139,7 @@ p.picturetitle {
 					</container>
 
 					<container class='im6'>
-						<img src="images/gait_diagram.jpg"style="height:500px;width:1000px">
+						<img src="images/gait_diagram.jpg"style="height:30rem;width:62rem">
 						<div class="hovertext">
 							<p class="picturetitle">
 								<p class="picturetitle">Gait Diagram, 2017</p>
@@ -145,7 +152,7 @@ p.picturetitle {
 						</container>
 
 						<container class='im7'>
-							<img src="images/heel.gif"style="height:500px;width:500px">
+							<img src="images/heel.gif"style="height:30rem;width:30rem">
 							<div class="hovertext">
 								<p class="picturetitle">
 									<p class="picturetitle">Quantitatively Engineering Boats, 2019</p>
