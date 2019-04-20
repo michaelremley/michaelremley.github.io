@@ -9,7 +9,7 @@ function formatNavis() {
       Navis[i].style.borderBottom = "thick solid white";
       Navis[i].style.borderTopLeftRadius = "10px";
       Navis[i].style.borderTopRightRadius = "10px";
-
+      Navis[i].style.color = "black";
     }
   }
 }

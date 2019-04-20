@@ -3,7 +3,43 @@
 	<title>Projects</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
   <style>
+	container {
+		display:flex;
+		justify-content: space-between;
+		width: 90%;
+		color:black;
+		margin-top:2rem;
+		overflow-x:scroll;
+	}
+	container:hover .hovertext {
 
+	}
+	container h1 {
+		font-size: 25pt;
+	}
+	container p {
+		font-size: 20pt;
+		text-indent: 5rem;
+	}
+	projecttext {
+		width: 50%;
+		min-width: 40rem;
+	}
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	::-webkit-scrollbar{width:9px;height:9px;}
+ 	::-webkit-scrollbar-button:start:decrement,
+	::-webkit-scrollbar-button:end:increment{display:block;height:0;background-color:transparent;}
+  ::-webkit-scrollbar-track-piece{
+		background-color:transparent;
+		-webkit-border-radius:0;
+		-webkit-border-bottom-right-radius:8px;
+		-webkit-border-bottom-left-radius:8px;
+	}
+  ::-webkit-scrollbar-thumb:vertical{height:50px;background-color:#999;-webkit-border-radius:8px;}
+  ::-webkit-scrollbar-thumb:horizontal{width:50px;background-color:#999;-webkit-border-radius:8px;}
   </style>
 	<script src="styleNav.js">
 
@@ -22,7 +58,51 @@
     </nav>
     </div>
     <main style="background-color: white">
-      Coming soon!
+
+			<a href="./Projects/Humanmotion.html"><container>
+				<projecttext style="width:50%;">
+					<h1>Human Motion Project, 2016 - Present</h1>
+					<p>From starting a project wanting to build a prosthetic foot to designing
+					a portable human motion measurement system today, this project has changed
+					a lot over the years. The Human Motion Project seeks to expand accessibility
+					of human motion data to remote and underpriveledged places by creating a system
+					that is based on inertial sensors instead of camera arrays.
+					The other members of this project team and I are currently seeking a patent
+					and sponsorship since this project began to show promise.
+					</p>
+				</projecttext>
+				<img src="./images/isef_2018.png" style="height:30rem;"
+				alt="A poster from the 2018 international science fair.">
+
+				<img src="./images/motion_v2.png" style="height:30rem;width:30rem"
+				alt="An image of a circuit board about 25 millimeters square.">
+				<div class="hovertext">
+				</div>
+				</container></a>
+
+				<a href="./Projects/Minibeacon.html">
+					<container>
+					<projecttext style="width:50%;">
+						<h1>Minibeacon Project, 2018 - Present</h1>
+						<p>In the weather balloon research group HARBOR, we track the balloon
+							in multiple ways. The Minibeacon is a line-of-sight tracker mainly
+							used as tertiary tracking and for recovery. One device
+							flies with the balloon, transmitting its position data to a ground
+							unit that indicates the distance, azimuth, and angle of elevation to
+							the balloon.
+						</p>
+					</projecttext>
+					<img src="./images/harbor.jpg" style="height:30rem;"
+					alt="A poster from the 2018 international science fair.">
+
+					<img src="./images/harbor2.jpg" style="height:30rem;width:30rem"
+					alt="An image from a camera part of the payload of the balloon.
+					The fisheye lense makes the ground appear like a sphere.">
+					<div class="hovertext">
+					</div>
+					</container>
+				</a>
+
     </main>
 </body>
 </html>
