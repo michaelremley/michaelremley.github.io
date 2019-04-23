@@ -14,9 +14,19 @@ name_title {
   padding-top: 5%;
   margin-bottom: 5px;
 }
+social_media {
+  width:10rem;
+  display:inline-flex;
+  justify-content: space-between;
+  margin-left: 50%;
+}
+social_media a {
+  padding-left: 2%;
+}
 nav {
   font-size: 30px;
   padding-left: 5%;
+  padding-top: 0.5rem;
   margin-top: 1%;
   width:auto;
   background: #393939;
