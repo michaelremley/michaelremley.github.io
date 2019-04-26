@@ -3,9 +3,18 @@ header {
   box-shadow: inset 0 0 5px #000000;
   padding-top: 2%
 }
+footer {
+  padding-top: 5%;
+  padding-bottom:1%;
+  text-align: center;
+  color:gray;
+}
 body {
   margin: 0;
 	font-family: Tahoma;
+}
+main {
+  margin: 2rem;
 }
 p {
   margin: 10px;
@@ -13,14 +22,14 @@ p {
 name_title {
   color: black;
   font-weight: bold;
-  font-size:45px;
+  font-size:4rem;
   align: left;
   margin-left: 5%;
   padding-top: 5%;
   margin-bottom: 5px;
 }
 social_media {
-  width:20rem;
+  width:-webkit-fill-available;
   display:inline-flex;
   justify-content: space-around;
   padding: 10%;
@@ -45,9 +54,6 @@ a.nav {
   padding-right: 1%;
   border-bottom: thick solid transparent;
   z-index = -1;
-}
-main {
-  margin: 2rem;
 }
 container {
 		/* margin:auto; */
