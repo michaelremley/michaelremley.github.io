@@ -29,7 +29,7 @@ name_title {
   margin-bottom: 5px;
 }
 social_media {
-  width:-webkit-fill-available;
+  width:75%;
   display:inline-flex;
   justify-content: space-around;
   padding: 10%;
