@@ -83,3 +83,7 @@ container {
   height:0;
   transition: 0.25s ease;
 	}
+  ::selection {
+    color: white;
+    background: #393939;
+  }
