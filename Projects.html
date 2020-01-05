@@ -1,88 +1,98 @@
 <html>
+
 <head>
 	<title>Projects</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-  <style>
-	container {
-		display:flex;
-		justify-content: space-between;
-		width: auto;
-		color:black;
-		margin:2rem 2rem;
-		overflow-x:scroll;
-	}
-	container:hover .hovertext {
+	<style>
+		container {
+			display: flex;
+			justify-content: space-between;
+			width: auto;
+			color: black;
+			margin: 2rem 2rem;
+			overflow-x: scroll;
+		}
 
-	}
-	container h1 {
-		font-size: 25pt;
-	}
-	container p {
-		font-size: 20pt;
-		text-indent: 5rem;
-	}
-	projecttext {
-		width: 50%;
-		min-width: 40rem;
-	}
-	a:nav {
-		color: black;
-		text-decoration: none;
-	}
-	::-webkit-scrollbar{width:9px;height:9px;}
- 	::-webkit-scrollbar-button:start:decrement,
-	::-webkit-scrollbar-button:end:increment{display:block;height:0;background-color:transparent;}
-  ::-webkit-scrollbar-track-piece{
-		background-color:transparent;
-		-webkit-border-radius:0;
-		-webkit-border-bottom-right-radius:8px;
-		-webkit-border-bottom-left-radius:8px;
-	}
-  ::-webkit-scrollbar-thumb:vertical{height:50px;background-color:#999;-webkit-border-radius:8px;}
-  ::-webkit-scrollbar-thumb:horizontal{width:50px;background-color:#999;-webkit-border-radius:8px;}
-  </style>
-	<script src="styleNav.js">
+		container:hover .hovertext {}
 
-  </script>
+		container h1 {
+			font-size: 25pt;
+		}
+
+		container p {
+			font-size: 20pt;
+			text-indent: 5rem;
+		}
+
+		projecttext {
+			width: 50%;
+			min-width: 40rem;
+		}
+
+		a:nav {
+			color: black;
+			text-decoration: none;
+		}
+
+		::-webkit-scrollbar {
+			width: 9px;
+			height: 9px;
+		}
+
+		::-webkit-scrollbar-button:start:decrement,
+		::-webkit-scrollbar-button:end:increment {
+			display: block;
+			height: 0;
+			background-color: transparent;
+		}
+
+		::-webkit-scrollbar-track-piece {
+			background-color: transparent;
+			-webkit-border-radius: 0;
+			-webkit-border-bottom-right-radius: 8px;
+			-webkit-border-bottom-left-radius: 8px;
+		}
+
+		::-webkit-scrollbar-thumb:vertical {
+			height: 50px;
+			background-color: #999;
+			-webkit-border-radius: 8px;
+		}
+
+		::-webkit-scrollbar-thumb:horizontal {
+			width: 50px;
+			background-color: #999;
+			-webkit-border-radius: 8px;
+		}
+	</style>
 </head>
+
 <body>
 	<header>
 		<name_title>Michael Remley</name_title><br>
-		<nav onload="formatNavis()">
-			<a class="nav" href="./index.html" style=nav>Home</a>
+		<nav>
+			<a class="nav" href="./index.html">Home</a>
 			<a class="nav" href="./Projects.html">Projects</a>
 			<a class="nav" href="./Gallery.html">Gallery</a>
 		</nav>
 	</header>
-    <main>
-		<container id="Human_Motion">
-			<projecttext style="width:50%;">
-				<h1>Human Motion Project, 2016 - Present</h1>
-				<p>From starting a project wanting to build a prosthetic foot to designing portable human motion measurement system today, this project has changed lot over the years. The Human Motion Project seeks to expand accessibility human motion data to remote and underpriveledged places by creating a system is based on inertial sensors instead of camera arrays. I am currently working on the fourth major prototype of the measurement device, focusing now on how the user experience for both researchers and hobbyists. The other members of this project team and I are currently seeking a patent sponsorship for our work.
-				</p>
-			</projecttext>
-			<img src="./images/isef_2018.png" style="height:30rem;"
-			alt="A poster from the 2018 international science fair.">
-
-			<img src="./images/motion_v2.png" style="height:30rem;width:30rem"
-			alt="An image of a circuit board about 25 millimeters square.">
-			<div class="hovertext">
-			</div>
-		</container>
-
+	<main>
 		<container id="The_Wanderer">
 			<projecttext style="width:50%;">
 				<h1>The Wanderer, 2019</h1>
-				<p>We built a walking robot, called the Wanderer, that uses OpenCV to see people as it wanders around. When it sees people, it greets them, and when the people leave it says goodbye. I learned about robotic systems integration in this project by designing power circuitry and connecting all electrical hardware for the software subteam. I also worked in the mechanical subteam to ensure internal components had enough space in the final assembly.
-				<br><br><a href="http://poe.olin.edu/2019/wanderer/">Project Website</a>
+				<p>We built a walking robot, called the Wanderer, that uses OpenCV to see people as it wanders around.
+					When it sees people, it greets them, and when the people leave it says goodbye. I learned about
+					robotic systems integration in this project by designing power circuitry and connecting all
+					electrical hardware for the software subteam. I also worked in the mechanical subteam to ensure
+					internal components had enough space in the final assembly.
+					<br><br><a href="http://poe.olin.edu/2019/wanderer/">Project Website</a>
 				</p>
-				
+
 			</projecttext>
 			<img src="./images/wanderer.jpg" style="height:30rem;"
-			alt="The Wanderer Robot with its fur cover and camera nose.">
+				alt="The Wanderer Robot with its fur cover and camera nose.">
 
-			<img src="./images/wanderer.gif" style="height:30rem;"
-			alt="The Wanderer Robot waddling around.">
+			<img src="./images/wanderer.gif" style="height:30rem;" alt="The Wanderer Robot waddling around.">
 
 			<div class="hovertext">
 			</div>
@@ -91,44 +101,37 @@
 		<container id="The_Floor_Is_Lava">
 			<projecttext style="width:50%;">
 				<h1>The Floor is Lava, 2019</h1>
-				<p>A foot traffic heatmapping utility to inform retail store layout and provide information about shopper habits. This project uses computer vision to identify where people are in a video and determines where in frame they spend most of their time.
-				<br><br><a href="https://sd19spring.github.io/the_floor_is_lava/">Project Website</a>
+				<p>A foot traffic heatmapping utility to inform retail store layout and provide information about
+					shopper habits. This project uses computer vision to identify where people are in a video and
+					determines where in frame they spend most of their time.
+					<br><br><a href="https://sd19spring.github.io/the_floor_is_lava/">Project Website</a>
 				</p>
-				
+
 			</projecttext>
-			<iframe style="height:30rem;width:53rem;" src="https://www.youtube.com/embed/rRn8gJ8Miv8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+			<iframe style="height:30rem;width:53rem;" src="https://www.youtube.com/embed/rRn8gJ8Miv8" frameborder="0"
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen=""></iframe>
 
 			<div class="hovertext">
 			</div>
 		</container>
 
-		<container id="Minibeacon">
-			<projecttext style="width:50%;">
-				<h1>Minibeacon Project, 2018</h1>
-				<p>In the weather balloon research group HARBOR, we track the balloon
-					in multiple ways. The Minibeacon is a line-of-sight tracker mainly
-					used as tertiary tracking and for recovery. One device with the balloon, transmitting its position data to a ground
-					unit that indicates the distance, azimuth, and angle of elevation to balloon. Other devices on the balloon measure particulates and certain chemicals in the air, which we then use for research. Cameras also often fly on the balloon, giving great photos and further material for research.
-				</p>
-			</projecttext>
-			<img src="./images/harbor.jpg" style="height:30rem;"
-			alt="An image after recovering the balloon after about a half hour of hiking">
 
-			<img src="./images/harbor2.jpg" style="height:30rem;width:30rem"
-			alt="An image from a camera part of the payload of the balloon.
-			The fisheye lense makes the ground appear like a sphere.">
-			<div class="hovertext">
-			</div>
-		</container>
-		
+
 		<container id="NEATO">
 			<projecttext style="width:50%;">
-				<h1>NEATO Robotics, 2019</h1>
-				<p>In the course, Quantitative Engineering Analysis, we were tasked with guiding a robot called a NEATO through an obstacle course to a bucket. I used the LIDAR sensor and wheel encoder data to reconstruct the challenge environment as line segments in the plane with a point as the target position of the bucket. I took these line segments and target point as input for a potential field function, creating an overall downhill slope to the target with uphill regions representing obstacles. The robot then follows a path around obstacles to the target by executing a gradient descent algorithm on the potential field.
+				<h1>Gradient Descent Navigation, 2019</h1>
+				<p>In the course, Quantitative Engineering Analysis, we were tasked with guiding a robot called a NEATO
+					through an obstacle course to a bucket. I used the LIDAR sensor and wheel encoder data to
+					reconstruct the challenge environment as line segments in the plane with a point as the target
+					position of the bucket. I took these line segments and target point as input for a potential field
+					function, creating an overall downhill slope to the target with uphill regions representing
+					obstacles. The robot then follows a path around obstacles to the target by executing a gradient
+					descent algorithm on the potential field.
 				</p>
 			</projecttext>
-			<img src="./images/the_gauntlet.png"  style="height:30rem;"
-			alt="An image showing the potential field of the obstacles and the target point, resembles a bowl with the target at the bottom and spikes shooting upward as obstacles.">
+			<img src="./images/the_gauntlet.png" style="height:30rem;"
+				alt="An image showing the potential field of the obstacles and the target point, resembles a bowl with the target at the bottom and spikes shooting upward as obstacles.">
 
 			<!-- <img src="./images/harbor2.jpg" style="height:30rem;width:30rem"
 			alt="An image from a camera part of the payload of the balloon.
@@ -140,18 +143,65 @@
 		<container id="Red_Cube_Platformer">
 			<projecttext style="width:50%;">
 				<h1>Red Cube Platformer, 2019</h1>
-				<p> This game written in Python with the Pygame module allows the player to run around a randomly generated side-scrolling level set. The game allows the player to run, jump, wall-jump, and climb on the ceiling using a simple physics/collision engine made from scratch. Made for Software Design, this project's focus was on creating an interactive program; Skye Ozga and I chose to make this game because we have enjoyed similar games in the past. I still update this every once in a while, and you can view the most recent source code on <a href="https://github.com/michaelremley/Red-Cube-Platformer"target="_blank"><u>my GitHub</u></a>.
+				<p> This game written in Python with the Pygame module allows the player to run around a randomly
+					generated side-scrolling level set. The game allows the player to run, jump, wall-jump, and climb on
+					the ceiling using a simple physics/collision engine made from scratch. Made for Software Design,
+					this project's focus was on creating an interactive program; Skye Ozga and I chose to make this game
+					because we have enjoyed similar games in the past. I still update this every once in a while, and
+					you can view the most recent source code on <a
+						href="https://github.com/michaelremley/Red-Cube-Platformer" target="_blank"><u>my
+							GitHub</u></a>.
 				</p>
 			</projecttext>
-			<img src="./images/red_cube.png"  style="height:30rem;"
-			alt="An image of the game with white platforms, black background, and a red square avatar.">
+			<img src="./images/red_cube.png" style="height:30rem;"
+				alt="An image of the game with white platforms, black background, and a red square avatar.">
 			<div class="hovertext">
 			</div>
 		</container>
+		<container id="Human_Motion">
+			<projecttext style="width:50%;">
+				<h1>Human Motion Project, 2016 - Present</h1>
+				<p>From starting a project wanting to build a prosthetic foot to designing portable human motion
+					measurement system today, this project has changed lot over the years. The Human Motion Project
+					seeks to expand accessibility human motion data to remote and underpriveledged places by creating a
+					system is based on inertial sensors instead of camera arrays. I am currently working on the fourth
+					major prototype of the measurement device, focusing now on how the user experience for both
+					researchers and hobbyists. The other members of this project team and I are currently seeking a
+					patent sponsorship for our work.
+				</p>
+			</projecttext>
+			<img src="./images/isef_2018.png" style="height:30rem;"
+				alt="A poster from the 2018 international science fair.">
 
-    </main>
-		<footer>
-			Website made by Michael Remley
-		</footer>
+			<img src="./images/motion_v2.png" style="height:30rem;width:30rem"
+				alt="An image of a circuit board about 25 millimeters square.">
+			<div class="hovertext">
+			</div>
+		</container>
+		<container id="Minibeacon">
+			<projecttext style="width:50%;">
+				<h1>Minibeacon Project, 2018</h1>
+				<p>In the weather balloon research group HARBOR, we track the balloon
+					in multiple ways. The Minibeacon is a line-of-sight tracker mainly
+					used as tertiary tracking and for recovery. One device with the balloon, transmitting its position
+					data to a ground
+					unit that indicates the distance, azimuth, and angle of elevation to balloon. Other devices on the
+					balloon measure particulates and certain chemicals in the air, which we then use for research.
+					Cameras also often fly on the balloon, giving great photos and further material for research.
+				</p>
+			</projecttext>
+			<img src="./images/harbor.jpg" style="height:30rem;"
+				alt="An image after recovering the balloon after about a half hour of hiking">
+
+			<img src="./images/harbor2.jpg" style="height:30rem;width:30rem" alt="An image from a camera part of the payload of the balloon.
+					The fisheye lense makes the ground appear like a sphere.">
+			<div class="hovertext">
+			</div>
+		</container>
+	</main>
+	<footer>
+		<p>Website © Michael Remley</p>
+	</footer>
 </body>
+
 </html>
