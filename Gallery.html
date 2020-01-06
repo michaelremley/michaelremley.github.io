@@ -1,69 +1,89 @@
 <html>
+
 <head>
 	<title>Gallery</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-  <style>
-	main{
-		display: grid;
-		grid-gap: 1rem;
-		max-width: 94rem;
-		width:90%;
-		margin:2rem auto;
-	}
-	.im1{
-		grid-area: 1 / 1 / span 1 / span 3;
-		width: 100%
-		padding-top:33%;
-	}
-	.im2{
-		grid-area: 2 / 1 / span 1 / span 1;
-	}
-	.im3{
-		grid-area: 2 / 2 / span 1 / span 1;
-	}
-	.im4{
-		grid-area: 2 / 3 / span 1 / span 1;
-	}
-	.im5{
-		grid-area: 3 / 1 / span 2 / span 1;
-	}
-	.im6{
-		grid-area: 4 / 2 / span 1 / span 2;
-	}
-	.im7 {
-		grid-area: 3 / 2 / span 1 / span 1;
-	}
-	.im8 {
-		grid-area: 3 / 3 / span 1 / span 1;
-	}
-	.im9 {
-		grid-area: 5 / 1 / span 1 / span 2;
-	}
-	.im10 {
-		grid-area: 5 / 3 / span 1 / span 1;
-	}
-	img {
-		object-fit: cover;
-		max-width: 100%;
-		box-sizing: border-box;
-	}
-	container {
-		/* margin:auto; */
-		border:1em solid #DDDDDD;
-		box-shadow: 0 0 5px black;
-		background-color: #DDDDDD;
-		width:fit-content;
-		position: relative;
-		/* align-self: center; */
+	<style>
+		main {
+			display: grid;
+			grid-auto-rows: 22rem;
+			grid-auto-columns: 22rem;
+			grid-gap: 1rem;
+			max-width: 94rem;
+			width: 90%;
+			margin: 2rem auto;
+		}
 
-	}
-p.picturetitle {
-	font-size: 20px;
-	font-weight: bold;
-}
-  </style>
+		.im1 {
+			grid-area: 1 / 1 / span 1 / span 3;
+			width: 100% padding-top:33%;
+		}
+		.im2 {
+			grid-area: 1 / 1 / span 1 / span 3;
+		}
+
+		.play_experience {
+			grid-area: 4 / 1 / span 1 / span 1;
+		}
+
+		.im3 {
+			grid-area: 3 / 1 / span 1 / span 1;
+		}
+
+		.im4 {
+			grid-area: 2 / 3 / span 1 / span 1;
+		}
+
+		.im5 {
+			grid-area: 2 / 4 / span 2 / span 1;
+		}
+
+		.im6 {
+			grid-area: 4 / 2 / span 1 / span 2;
+		}
+
+		.im7 {
+			grid-area: 3 / 2 / span 1 / span 1;
+		}
+
+		.im8 {
+			grid-area: 3 / 3 / span 1 / span 1;
+		}
+
+		.im9 {
+			grid-area: 2 / 1 / span 1 / span 2;
+		}
+
+		.im10 {
+			grid-area: 4 / 4 / span 1 / span 1;
+		}
+
+		img {
+			object-fit: cover;
+			max-width: 100%;
+			max-height: 100%;
+			box-sizing: border-box;
+		}
+
+		container {
+			/* margin:auto; */
+			border: 1em solid #DDDDDD;
+			box-shadow: 0 0 5px black;
+			background-color: #DDDDDD;
+			width: fit-content;
+			position: relative;
+			/* align-self: center; */
+
+		}
+
+		p.picturetitle {
+			font-size: 20px;
+			font-weight: bold;
+		}
+	</style>
 
 </head>
+
 <body>
 	<header>
 		<name_title>Michael Remley</name_title><br>
@@ -73,135 +93,140 @@ p.picturetitle {
 			<a class="nav" href="./Gallery.html">Gallery</a>
 		</nav>
 	</header>
-    <main>
-				<container class='im1'>
-					<img src="images/antelope_island_sunset.jpg" style="height:30rem;width:94rem"
-					alt="A panorama of sunset over the Great Salt Lake with strong orange
+	<main>
+		<container class='im1'>
+			<img src="images/antelope_island_sunset.jpg" style="height:min-content;width:min-content" alt="A panorama of sunset over the Great Salt Lake with strong orange
 					and red hues.">
-					<div class="hovertext">
-						<p class="picturetitle">Sunset on Antelope Island, 2017</p>
-									<p>by Michael Remley. All Rights Reserved</p>
-					</div>
-				</container>
+			<div class="hovertext">
+				<p class="picturetitle">Sunset on Antelope Island, 2017</p>
+				<p>by Michael Remley. All Rights Reserved</p>
+			</div>
+		</container>
 
+		<container class='wanderer'>
+				<img src="images/wanderer.jpg" style="height:min-content;width:min-content" alt="The Wanderer, a small, furry robot with computer vision to greet people.">
+				<div class="hovertext">
+					<p class="picturetitle">The Wanderer, 2019</p>
+					<p>The Wanderer, a small, furry robot with computer vision to greet people.</p>
+				</div>
+		</container>
 
-				<container class='im2'>
-					<img src="images/play_experience_demo.jpg" style="height:30rem;width:30rem"
-					alt="An image of children playing a game with a wall of yellow hexagons
+		<container class='play_experience'>
+			<img src="images/play_experience_demo.jpg" style="height:30rem;width:30rem" alt="An image of children playing a game with a wall of yellow hexagons
 					about 30 centimeters in size.">
-					<div class="hovertext">
-						<p class="picturetitle">Play Experience, 2018</p>
-						<p>My project team designed a bee-themed play experience for fourth graders.<br>
-						by Michael Remley. All Rights Reserved</p>
-					</div>
-				</container>
+			<div class="hovertext">
+				<p class="picturetitle">Play Experience, 2018</p>
+				<p>My project team designed a bee-themed play experience for fourth graders.<br>
+					by Michael Remley. All Rights Reserved</p>
+			</div>
+		</container>
 
-				<container class='im3'>
-					<img src="images/hopper.jpg"style="height:30rem;width:30rem"
-					alt="A computer generated model of a beetle-shaped toy assembled from
+		<container class='im3'>
+			<img src="images/hopper.jpg" style="height:30rem;width:30rem" alt="A computer generated model of a beetle-shaped toy assembled from
 					laser cut hard board. One side is transparent, showing the rib structure
 					within.">
-					<div class="hovertext">
-						<p class="picturetitle">Click Beetle-Inspired Hopper, 2018</p>
-						<p>A bio-inspired hopping toy with a focus on carrying a passenger safely.</p>
-						<!-- <p><a href="./Projects/hopper.html">Part of the Hopper Project</a></p> -->
-					</div>
-				</container>
+			<div class="hovertext">
+				<p class="picturetitle">Click Beetle-Inspired Hopper, 2018</p>
+				<p>A bio-inspired hopping toy with a focus on carrying a passenger safely.</p>
+				<!-- <p><a href="./Projects/hopper.html">Part of the Hopper Project</a></p> -->
+			</div>
+		</container>
 
-				<container class='im4'>
-					<img src="images/motion_v2.png"style="height:30rem;width:30rem"
-					alt="An image of a circuit board about 25 millimeters square.">
-					<div class="hovertext">
-						<p class="picturetitle">Human Motion V2, 2018</p>
-						<p>An image of one of the boards I designed, assembled, and programmed for human motion data collection<br>
-						by Michael Remley. All Rights Reserved</p>
-							<p><a href="./Projects.html#Human_Motion">Part of the Human Motion Project</a></p>
-					</div>
-				</container>
+		<container class='im4'>
+			<img src="images/motion_v2.png" style="height:30rem;width:30rem"
+				alt="An image of a circuit board about 25 millimeters square.">
+			<div class="hovertext">
+				<p class="picturetitle">Human Motion V2, 2018</p>
+				<p>An image of one of the boards I designed, assembled, and programmed for human motion data
+					collection<br>
+					by Michael Remley. All Rights Reserved</p>
+				<p><a href="./Projects.html#Human_Motion">Part of the Human Motion Project</a></p>
+			</div>
+		</container>
 
-				<container class='im5'>
-					<img src="images/me_and_balloon.png"style="height:63rem;width:30rem"
-					alt="A large research balloon floating above me while I hold the tether.">
-					<div class="hovertext">
-						<p class="picturetitle">
-							<p class="picturetitle">Air Quality Measurement with HARBOR, 2017</p>
-									<p>I am part of the HARBOR group at Weber State University, and
-										this picture is from some ground-level air measurements we did on
-										pollution during an inversion in Ogden, Utah</p>
-									<p><a href="./Projects.html#Minibeacon">Part of the Minibeacon Project</a></p>
-					</div>
-					</container>
+		<container class='im5'>
+			<img src="images/me_and_balloon.png" style="height:63rem;width:30rem"
+				alt="A large research balloon floating above me while I hold the tether.">
+			<div class="hovertext">
+				<p class="picturetitle">
+					<p class="picturetitle">Air Quality Measurement with HARBOR, 2017</p>
+					<p>I am part of the HARBOR group at Weber State University, and
+						this picture is from some ground-level air measurements we did on
+						pollution during an inversion in Ogden, Utah</p>
+					<p><a href="./Projects.html#Minibeacon">Part of the Minibeacon Project</a></p>
+			</div>
+		</container>
 
-					<container class='im6'>
-						<img src="images/gait_diagram.jpg" style="height:30rem;width:62rem"
-						alt="A gait phase diagram showing one leg moving through a complete step.">
-						<div class="hovertext">
-							<p class="picturetitle">
-								<p class="picturetitle">Gait Diagram, 2017</p>
-										<p>I have been studying human gait since 2016, and I created
-										this diagram for a presentation at the international science fair.
-										The audience members had varying degrees of familiarity with
-										the subject, so diagrams like this were useful in communications.</p>
-										<p><a href="./Projects.html#Human_Motion">Part of the Human Motion Project</a></p>
-						</div>
-						</container>
+		<container class='im6'>
+			<img src="images/gait_diagram.jpg" style="height:30rem;width:62rem"
+				alt="A gait phase diagram showing one leg moving through a complete step.">
+			<div class="hovertext">
+				<p class="picturetitle">
+					<p class="picturetitle">Gait Diagram, 2017</p>
+					<p>I have been studying human gait since 2016, and I created
+						this diagram for a presentation at the international science fair.
+						The audience members had varying degrees of familiarity with
+						the subject, so diagrams like this were useful in communications.</p>
+					<p><a href="./Projects.html#Human_Motion">Part of the Human Motion Project</a></p>
+			</div>
+		</container>
 
-						<container class='im7'>
-							<img src="images/heel.gif"style="height:30rem;width:30rem"
-							alt="An animation showing a boat hull cross section in water with
+		<container class='im7'>
+			<img src="images/heel.gif" style="height:30rem;width:30rem" alt="An animation showing a boat hull cross section in water with
 							arrows showing the relative position of the buoyant force and
 							the force of gravity for various heel angles.">
-							<div class="hovertext">
-								<p class="picturetitle">
-									<p class="picturetitle">Quantitatively Engineering Boats, 2019</p>
-											<p>In the class Quantitative Engineering Analysis, I designed a boat
-											and calculated how it would float before building anything. This illustration
-										shows the relative positions of buoyant force and force of gravity
-										for a variety of boat orientations.</p>
+			<div class="hovertext">
+				<p class="picturetitle">
+					<p class="picturetitle">Quantitatively Engineering Boats, 2019</p>
+					<p>In the class Quantitative Engineering Analysis, I designed a boat
+						and calculated how it would float before building anything. This illustration
+						shows the relative positions of buoyant force and force of gravity
+						for a variety of boat orientations.</p>
 
-							</div>
-							</container>
-
-							<container class='im8'>
-								<img src="images/harbor.jpg" style="height:30rem;width:30rem"
-								alt="A group of people holding recently recovered high altitude
-								balloon research equipment.">
-								<div class="hovertext">
-									<p class="picturetitle">
-										<p class="picturetitle">Balloon Recovery, 2017</p>
-												<p>After launching a balloon and tracking the payload
-												to a landing area, we use the Minibeacon to precisely
-												locate the payload. I am third from the right, and the
-											Minibeacon is the white box in the frame I am holding.</p>
-												<p><a href="./Projects.html#Minibeacon">Part of the Minibeacon Project</a></p>
-								</div>
-								</container>
-
-								<container class='im9'>
-									<img src="images/the_gauntlet.png" style="height:30rem;width:62rem"
-									alt="An image showing the potential field of the obstacles and the target point, resembles a bowl with the target at the bottom and spikes shooting upward as obstacles.">
-									<div class="hovertext">
-										<p class="picturetitle">
-											<p class="picturetitle">The Gauntlet, 2019</p>
-													<p>In order to get a small vaccuum robot from a starting point to the red circle, I abstract the obstacles as raised bumps and instruct it to only go downhill towards the target point.</p>
-													<p><a href="./Projects.html#NEATO">Part of the NEATO Robotics Project</a></p>
-									</div>
-									</container>
-
-									<container class='im10'>
-										<img src="images/red_cube.png" style="height:30rem;width:47rem"
-										alt="An image of the game with white platforms, black background, and a red square avatar.">
-										<div class="hovertext">
-											<p class="picturetitle">
-												<p class="picturetitle">Red Cube Platformer, 2019</p>
-														<p>A simple game with a custom physics/collision engine made by Skye Ozga and I.</p>
-														<p><a href="./Projects.html#Red_Cube_Platformer">Part of the Red Cube Platfomer Project</a></p>
-										</div>
-										</container>
 			</div>
-    </main>
-		<footer>
-			Website made by Michael Remley
-		</footer>
+		</container>
+
+		<container class='im8'>
+			<img src="images/harbor.jpg" style="height:30rem;width:30rem" alt="A group of people holding recently recovered high altitude
+								balloon research equipment.">
+			<div class="hovertext">
+				<p class="picturetitle">
+					<p class="picturetitle">Balloon Recovery, 2017</p>
+					<p>After launching a balloon and tracking the payload
+						to a landing area, we use the Minibeacon to precisely
+						locate the payload. I am third from the right, and the
+						Minibeacon is the white box in the frame I am holding.</p>
+					<p><a href="./Projects.html#Minibeacon">Part of the Minibeacon Project</a></p>
+			</div>
+		</container>
+
+		<container class='im9'>
+			<img src="images/the_gauntlet.png" style="height:30rem;width:62rem"
+				alt="An image showing the potential field of the obstacles and the target point, resembles a bowl with the target at the bottom and spikes shooting upward as obstacles.">
+			<div class="hovertext">
+				<p class="picturetitle">
+					<p class="picturetitle">The Gauntlet, 2019</p>
+					<p>In order to get a small vaccuum robot from a starting point to the red circle, I abstract the
+						obstacles as raised bumps and instruct it to only go downhill towards the target point.</p>
+					<p><a href="./Projects.html#NEATO">Part of the NEATO Robotics Project</a></p>
+			</div>
+		</container>
+
+		<container class='im10'>
+			<img src="images/red_cube.png" style="height:30rem;width:47rem"
+				alt="An image of the game with white platforms, black background, and a red square avatar.">
+			<div class="hovertext">
+				<p class="picturetitle">
+					<p class="picturetitle">Red Cube Platformer, 2019</p>
+					<p>A simple game with a custom physics/collision engine made by Skye Ozga and I.</p>
+					<p><a href="./Projects.html#Red_Cube_Platformer">Part of the Red Cube Platfomer Project</a></p>
+			</div>
+		</container>
+		</div>
+	</main>
+	<footer>
+		Website made by Michael Remley
+	</footer>
 </body>
+
 </html>
