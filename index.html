@@ -10,7 +10,17 @@
 		document.addEventListener('DOMContentLoaded',function(){
 			$("#nav-item-experience").click(function(){
 				$.ajax({
-					url: "./_experience.html",
+					url: "./experience.html",
+					type: "GET",
+					success: function(result){
+						$("#main-content").html(result)
+					}
+				})
+			})
+			// Courses button
+			$("#nav-item-courses").click(function(){
+				$.ajax({
+					url: "./Courses.html",
 					type: "GET",
 					success: function(result){
 						$("#main-content").html(result)
@@ -43,11 +53,15 @@
 		          Projects
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Action</a>
-		          <a class="dropdown-item" href="#">Another action</a>
+		          <a class="dropdown-item" href="#">2020 - Junior</a>
+		          <a class="dropdown-item" href="#">2019 - Sophomore</a>
+							<a class="dropdown-item" href="#">2018 - Freshman</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">Something else here</a>
+		          <a class="dropdown-item" href="#">2018 and earlier</a>
 		        </div>
+		      </li>
+					<li class="nav-item">
+		        <a class="nav-link" href="#" id="nav-item-courses">Courses</a>
 		      </li>
 		    </ul>
 			<ul class="navbar-nav ml-auto">
