@@ -17,10 +17,49 @@
 					}
 				})
 			})
+			$("#nav-item-resume").click(function(){
+				$.ajax({
+					url: "./Resume.html",
+					type: "GET",
+					success: function(result){
+						$("#main-content").html(result)
+					}
+				})
+			})
 			// Courses button
 			$("#nav-item-courses").click(function(){
 				$.ajax({
 					url: "./Courses.html",
+					type: "GET",
+					success: function(result){
+						$("#main-content").html(result)
+					}
+				})
+			})
+			// 2020 projects button
+			$("#nav-item-2020Projects").click(function(){
+				$.ajax({
+					url: "./2020Projects.html",
+					type: "GET",
+					success: function(result){
+						$("#main-content").html(result)
+					}
+				})
+			})
+			// 2020 projects button
+			$("#nav-item-2019Projects").click(function(){
+				$.ajax({
+					url: "./2019Projects.html",
+					type: "GET",
+					success: function(result){
+						$("#main-content").html(result)
+					}
+				})
+			})
+			// 2020 projects button
+			$("#nav-item-2018Projects").click(function(){
+				$.ajax({
+					url: "./2020Projects.html",
 					type: "GET",
 					success: function(result){
 						$("#main-content").html(result)
@@ -53,15 +92,17 @@
 		          Projects
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">2020 - Junior</a>
-		          <a class="dropdown-item" href="#">2019 - Sophomore</a>
-							<a class="dropdown-item" href="#">2018 - Freshman</a>
+		          <a class="dropdown-item" href="#" id="nav-item-2020Projects">2020 - Junior</a>
+		          <a class="dropdown-item" href="#" id="nav-item-2019Projects">2019 - Sophomore</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">2018 and earlier</a>
+		          <!-- <a class="dropdown-item" href="#">2018 and earlier</a> -->
 		        </div>
 		      </li>
 					<li class="nav-item">
 		        <a class="nav-link" href="#" id="nav-item-courses">Courses</a>
+		      </li>
+					<li class="nav-item">
+		        <a class="nav-link" href="#" id="nav-item-resume">Resume</a>
 		      </li>
 		    </ul>
 			<ul class="navbar-nav ml-auto">
@@ -91,11 +132,19 @@
 				<div class="row no-gutters">
 					<div class="col-md-9">
 						<div class="card-body">
-							<p class="card-text">I am an Electromechanical Engineering student at Olin College of Engineering, graduating class of 2022. <br>
-							I am the Chair of the Honor Board on campus,
-							a student researcher in musical variation from chaos,
+							<p class="card-text">I am an Electromechanical Engineering student at Olin College of Engineering, graduating class of 2022.
+								I have a passion for interdisciplinary work, so I have used my previous collegiate work to enable a concentration with both electrical and mechanical engineering depth. By graduation, I will have taken all required depth courses for both Electrical and Computer Engineering (ECE) and Mechanical Engineering (ME).
+							I am currently the Chair of the Honor Board on campus,
+							a student researcher in musical variation from chaos theory,
 							and an involved course assistant.</p>
-
+							 <p class="card-text">
+								 In my free time, I like to hike, work on personal projects, and learn more about the world around me.
+								 I	am currently working on a game called Planet Simulator where players start as a tiny comet and eat their way up to bigger and bigger astronomical scales.
+								 It is free to play on <a href="https://www.roblox.com/games/3686253681/Planet-Simulator">Roblox</a> with an account if you want to have a look!
+							 </p>
+							 <p class="card-text">
+								 The picture to the right is me on King's Peak, the highest in Utah at 13,000 feet. In 2020, I had the lucky opportunity to backpack over nearly 100 miles in the Grand Tetons and the Rockies.
+							 </p>
 						</div>
 					</div>
 			    <div class="col-md-3">

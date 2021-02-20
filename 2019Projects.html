@@ -1,0 +1,87 @@
+<div class="card mb-3 bg-light">
+  <div class="card-header"><h1>2019 Projects</h1></div>
+  <div class="card-body">
+    <div class="accordion" id="coursesAccordian">
+      <h3>Spring 2019</h3>
+      <div class="card">
+        <div class="card-header" id="heading3">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+              Gradient Descent Navigation
+            </button>
+          </h2>
+        </div>
+        <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#coursesAccordian">
+          <div class="card-body row">
+            <div class="col-8">
+            <h5>Summary</h5>
+            In the course, Quantitative Engineering Analysis, we were tasked with guiding a robot called a NEATO
+    					through an obstacle course to a bucket. I used the LIDAR sensor and wheel encoder data to
+    					reconstruct the challenge environment as line segments in the plane with a point as the target
+    					position of the bucket. I took these line segments and target point as input for a potential field
+    					function, creating an overall downhill slope to the target with uphill regions representing
+    					obstacles. The robot then follows a path around obstacles to the target by executing a gradient
+    					descent algorithm on the potential field.
+            </div>
+            <div class="col-4">
+              <img src="./images/the_gauntlet.png" class="card-img img-thumbnail"
+        				alt="An image showing the potential field of the obstacles and the target point, resembles a bowl with the target at the bottom and spikes shooting upward as obstacles.">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              The Floor is Lava
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#coursesAccordian">
+          <div class="card-body row">
+            <div class="col-8">
+              <h5>Summary</h5>
+              A foot traffic heatmapping utility to inform retail store layout and provide information about
+              shopper habits. This project uses computer vision to identify where people are in a video and
+              determines where in frame they spend most of their time.
+              <br><br><a href="https://sd19spring.github.io/the_floor_is_lava/">Project Website</a>
+            </div>
+            <div class="col-4">
+              <iframe src="https://www.youtube.com/embed/rRn8gJ8Miv8" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+        <h3>Fall 2019</h3>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                The Wanderer
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#coursesAccordian">
+            <div class="card-body row">
+              <div class="col-8">
+              <h5>Summary</h5>
+              We built a walking robot, called the Wanderer, that uses OpenCV to see people as it wanders around.
+      					When it sees people, it greets them, and when the people leave it says goodbye. I learned about
+      					robotic systems integration in this project by designing power circuitry and connecting all
+      					electrical hardware for the software subteam. I also worked in the mechanical subteam to ensure
+      					internal components had enough space in the final assembly.
+                <a href="http://poe.olin.edu/2019/wanderer/">Project Website</a>
+              </div>
+              <div class="col-4">
+                <img src="./images/wanderer.jpg" style="height:30rem;"
+          				alt="The Wanderer Robot with its fur cover and camera nose.">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
