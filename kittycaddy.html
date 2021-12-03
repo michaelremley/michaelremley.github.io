@@ -1,0 +1,78 @@
+<div class="jumbotron bg-info">
+  <div class="row">
+    <div class="col-4">
+    <h1 class="display-4 text-light">Kitty Caddy</h1>
+    <p class="lead text-light">An automated cat feeder for your weekend getaway</p>
+    <hr class="my-4 text-light">
+    <p class="text-light">The Kitty Caddy is an individual project I completed for the Real World Microcontrollers course. With Stan Reifel as a mentor, I designed, built, and programmed a controller for an existing cat feeder. I was given the housing with stepper motor, homing sensor, a screen, buttons, and a drawing of the feeder to locate the screen and buttons.</p>
+    </div>
+    <div class="col-8">
+    <img src="./images/kitty_caddy_front_image.png" class="rounded img-fluid" alt="cat feeder">
+    </div>
+  </div>
+  <!-- <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p> -->
+</div>
+<div class="card mb-3 bg-light">
+  <div class="card-body">
+<h2 class="display-4">Interface and User Experience Design</h2>
+<p>Although the screen and buttons were pre-selected, I had creative freedom and a strong focus on user interaction. I chose to put the current time large and center with a seconds field. This, in conjunction with a status field that says <em>"Ready To Feed"</em>, constantly reassures the user that the feeder is indeed working and will feed the cat. By pressing the center button, the user cycles through each field. By pressing the up/down buttons, they set the current time or feeding time.</p>
+<div class="row justify-content-md-center">
+  <div class="col-6">
+    <img src="./images/kitty_caddy_screen.png" class="rounded mx-auto d-block img-fluid" alt="cat feeder screen">
+  </div>
+  <!-- <div class="col-4">
+    <img src="./images/kitty_caddy_tht_schem.png" class="rounded mx-auto d-block img-fluid" alt="tht schematic">
+  </div> -->
+</div>
+<p>The source code was written in C using the Arduino IDE using the libraries: <em>SpeedyStepper</em>, <em>RTCLib</em>, and <em>SSD1306</em>. Besides updating the display, the firmware responds to user button presses with software debounce and auto-repeat for held buttons. On startup, it uses the homing sensor to align the feeding tray. It also feeds the cat at the desired time each day by rotating the feeding tray.</p>
+<p class="text-center"><a class="btn btn-primary" href="https://github.com/michaelremley/Kitty_Caddy/tree/main/src">Arduino source code</a></p>
+
+  <h2 class="display-4">Surface Mount Controller</h2>
+  <p>In my final revision, I avoided easy-to-use modules in favor of profession surface mount components. The user interface components (buttons and display), motor driver, and power connector remained the same, but I replaced the Arduino Nano with an ATMega328 microcontroller and built a buck converter for a power supply. Due to inventory shortage at the JLCPCB assembly factory, I had to purchase and solder the real-time clock IC myself.</p>
+  <div class="row justify-content-md-center">
+    <div class="col-5">
+      <img src="./images/kitty_caddy_smd_jlc.jpg" class="rounded mx-auto d-block img-fluid" alt="smd picture from JLC">
+    </div>
+    <div class="col-5">
+      <img src="./images/kitty_caddy_smd_schem.png" class="rounded mx-auto d-block img-fluid" alt="smd schematic">
+    </div>
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="col-5">
+      <img src="./images/kitty_caddy_board_cad.png" class="rounded mx-auto d-block img-fluid" alt="smd schematic">
+    </div>
+    <div class="col-5">
+      <img src="./images/kitty_caddy_board_layout.png" class="rounded mx-auto d-block img-fluid" alt="smd schematic">
+    </div>
+  </div>
+
+  <p>After soldering the remaining components by hand, I checked for power-ground shorts using my test points then plugged in to verify my power rails were functional. The screen, buttons, and power jack all aligned with the existing access ports in the enclosure, so it was time to flash the microcontroller. To flash the microcontroller, I used an Arduino Uno as an ISP connected to the header pins I included in my design. After changing the IO pin mapping the final version was ready to go! </p>
+
+  <div class="row justify-content-md-center">
+    <div class="col-6">
+      <img src="./images/kitty_caddy_board.png" class="rounded mx-auto d-block img-fluid" alt="smd picture from JLC">
+    </div>
+    <!-- <div class="col-4">
+      <img src="./images/kitty_caddy_smd_schem.png" class="rounded mx-auto d-block img-fluid" alt="smd schematic">
+    </div> -->
+  </div>
+  <p>If you look closely at the RTC (U3), you can see a gouge from when the supplier cut the board instead of its tape-reel. In this version, I stuck with a module for the stepper driver because the components to make a surface mount driving circuit were unavailable.</p>
+
+    <p class="text-center"><a class="btn btn-primary" href="https://github.com/michaelremley/Kitty_Caddy/tree/main/KittyCaddyV2">Schematic and KiCAD Files</a></p>
+
+    <h2 class="display-4">Through-Hole/Module Controller Prototype</h2>
+    <p>For the first revision of my board, I selected modules to accomplish the main functions of the controller: a driver for the stepper motor, a real-time clock to keep time, and an Arduino Nano for control logic and 5V power. I also identified connectors for the motor, supporting resistors for the homing sensor, and barrel jack for power. The design supports a user interface accomplished of 3 tactile buttons and a 64x128 OLED display.</p>
+    <div class="row justify-content-md-center">
+      <div class="col-5">
+        <img src="./images/kitty_caddy_tht.jpg" class="rounded mx-auto d-block img-fluid" alt="tht picture">
+      </div>
+      <div class="col-4">
+        <img src="./images/kitty_caddy_tht_schem.png" class="rounded mx-auto d-block img-fluid" alt="tht schematic">
+      </div>
+    </div>
+    <p>This version of the board served as my firmware development platform and a verification that I had positioned the buttons, screen, and power jack correctly. I also had a breadboard of this circuit for early firmware proof of concept and to check the circuit schematic.
+      <p class="text-center"><a class="btn btn-primary" href="https://github.com/michaelremley/Kitty_Caddy/tree/main/KittyCaddyV1">Schematic and KiCAD Files</a></p>
+  </div>
+</div>

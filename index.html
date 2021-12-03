@@ -43,6 +43,16 @@
 					}
 				})
 			})
+			// kitty caddy button
+			$("#nav-item-kittycaddy").click(function(){
+				$.ajax({
+					url: "./kittycaddy.html",
+					type: "GET",
+					success: function(result){
+						$("#main-content").html(result)
+					}
+				})
+			})
 			// 2020 projects button
 			$("#nav-item-2020Projects").click(function(){
 				$.ajax({
@@ -99,6 +109,7 @@
 		          Projects
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#" id="nav-item-kittycaddy">Cat Feeder Controller</a>
 		          <a class="dropdown-item" href="#" id="nav-item-2020Projects">2020 - Junior</a>
 		          <a class="dropdown-item" href="#" id="nav-item-2019Projects">2019 - Sophomore</a>
 		          <div class="dropdown-divider"></div>
@@ -162,8 +173,8 @@
 		</div>
 	</main>
 	<footer>
-		<div class="fixed-bottom">
-			<p class="text-center text-white" >© Michael Remley. Made with Bootstrap</p>
+		<div class="">
+			<p class="text-center text-white">(c) Michael Remley. Made with Bootstrap</p>
 		</div>
 	</footer>
 </body>
