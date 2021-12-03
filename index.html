@@ -43,6 +43,25 @@
 					}
 				})
 			})
+			//nightlight
+			$("#nav-item-nightlight").click(function(){
+				$.ajax({
+					url: "./nightlight.html",
+					type: "GET",
+					success: function(result){
+						$("#main-content").html(result)
+					}
+				})
+			})
+			$("#button-nightlight").click(function(){
+				$.ajax({
+					url: "./nightlight.html",
+					type: "GET",
+					success: function(result){
+						$("#main-content").html(result)
+					}
+				})
+			})
 			// kitty caddy button
 			$("#nav-item-kittycaddy").click(function(){
 				$.ajax({
@@ -119,6 +138,7 @@
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#" id="nav-item-kittycaddy">Cat Feeder Controller</a>
+							<a class="dropdown-item" href="#" id="nav-item-nightlight">Nightlight</a>
 		          <a class="dropdown-item" href="#" id="nav-item-2020Projects">2020 - Junior</a>
 		          <a class="dropdown-item" href="#" id="nav-item-2019Projects">2019 - Sophomore</a>
 		          <div class="dropdown-divider"></div>
@@ -198,6 +218,21 @@
 			    </div>
 			  </div>
 				<a class="btn btn-primary" href="#" id="button-kittycaddy">Learn More</a>
+			</div>
+			<div class="card bg-dark text-white">
+			  <img class="card-img" src="./images/nightlight_front.jpg" alt="Card image">
+			  <div class="card-img-overlay">
+			    <div class="row">
+			      <div class="col-6">
+			        <h1 class="display-4 text-light">Nightlight</h1>
+			        <p class="lead text-light">Design for Manufacturing Thermo Forming Project</p>
+			        <hr class="my-4 text-info">
+			        <p class="card-text text-light">To learn principles of thermo/vacuum forming, SolidWorks surface modeling, and brand-building, my partner and I chose to make this mushroom-fantasy nightlight. The mushroom caps and gills are thermoformed and painted, while the base electronics enclosure is 3D-printed.</p>
+							<a class="btn btn-primary" href="#" id="button-nightlight">Learn More</a>
+			      </div>
+			      <div class="col-6"></div>
+			    </div>
+			  </div>
 			</div>
 		</div>
 	</main>
